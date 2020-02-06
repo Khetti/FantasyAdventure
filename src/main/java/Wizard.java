@@ -8,7 +8,7 @@ public class Wizard extends Character {
         super.loot = new ArrayList<Treasure>();
     }
 
-    public void damageSpell() {
+    public void castDamageSpell(Character character, String chosenSpell) {
 
     }
 
