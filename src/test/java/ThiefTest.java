@@ -38,7 +38,7 @@ public class ThiefTest {
     @Test
     public void canSetDamage(){
         thief.setDamage(50);
-        assertEquals(50, thief.getHP(), 0.00);
+        assertEquals(50, thief.getDamage(), 0.00);
     }
 
     @Test
