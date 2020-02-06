@@ -78,4 +78,19 @@ public class FighterTest {
         assertEquals(20, fighter.getDamage(), 0);
     }
 
+    @Test
+    public void canAttack(){
+        Cleric cleric = new Cleric("cleric", 90, 5, 0);
+        fighter.attack(cleric, weapon);
+        assertEquals(75, cleric.getHP(), 0.00);
+    }
+
+    @Test
+    public void canAttackBattleCry(){
+        Cleric cleric = new Cleric("cleric", 90, 5, 0);
+        fighter.battleCry();
+        fighter.attack(cleric, weapon);
+        assertEquals(65, cleric.getHP(), 0.00);
+    }
+
 }
