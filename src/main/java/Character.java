@@ -3,12 +3,12 @@ import java.util.ArrayList;
 public abstract class Character {
 
     String name;
-    int HP;
-    int damage;
+    double HP;
+    double damage;
     ArrayList<Weapon> weapons;
     ArrayList<Treasure> loot;
 
-    public Character(String name, int HP, int damage) {
+    public Character(String name, double HP, double damage) {
         this.name = name;
         this.HP = HP;
         this.damage = damage;
@@ -17,7 +17,7 @@ public abstract class Character {
     }
 
 
-    public abstract void getName(String name);
+    public abstract String getName(String name);
 
     public abstract int getHP();
 
