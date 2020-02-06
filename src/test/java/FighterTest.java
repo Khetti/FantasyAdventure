@@ -22,11 +22,6 @@ public class FighterTest {
     }
 
     @Test
-    public void canSetName() {
-
-    }
-
-    @Test
     public void canGetHP() {
         assertEquals(70, fighter.getHP());
     }
