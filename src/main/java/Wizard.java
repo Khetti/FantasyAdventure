@@ -8,4 +8,8 @@ public class Wizard extends Character {
         super.loot = new ArrayList<Treasure>();
     }
 
+    public void damageSpell() {
+
+    }
+
 }
