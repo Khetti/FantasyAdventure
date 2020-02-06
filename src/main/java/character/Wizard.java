@@ -1,31 +1,35 @@
 package character;
 
 import Weapon.Weapon;
-import spellbook.SpellBook;
+import loot.Treasure;
 import spellbook.SpellBook;
 
 import java.util.ArrayList;
 
 public class Wizard extends Character {
 
-//    private ArrayList<spellbook.SpellBook> spells;
-    SpellBook spell;
+    private SpellBook spell;
 
-    public Wizard(String name, double HP, double damage, int gold) {
+    public Wizard(String name, double HP, double damage, int gold, SpellBook spell) {
         super(name, HP, damage, gold);
         super.weapons = new ArrayList<Weapon>();
-        super.loot = new ArrayList<loot.Treasure>();
-        this.spell = SpellBook.FIREBALL;
-//        this.spells = new ArrayList<SpellBook>();
-//        populateSpells();
+        super.loot = new ArrayList<Treasure>();
+        this.spell = spell;
     }
 
-//    public void populateSpells(){
-//        for (spellbook.SpellBook spell : spellbook.SpellBook.values)
-//    }
+    public SpellBook getSpell() {
+        return this.spell;
+    }
 
-    public void castDamageSpell(Character character, String chosenSpell) {
-//        int spellDamage = Spellbook.values(chosenSpell);
+    public void setSpell(SpellBook newSpell) {
+        this.spell = newSpell;
+    }
+
+    public void castSpell(Character character) {
+        int spellDamage =  this.spell.getValue();
+        double targetHP = character.getHP();
+        double newHP = targetHP - spellDamage;
+        character.setHP(newHP);
     }
 
 }
