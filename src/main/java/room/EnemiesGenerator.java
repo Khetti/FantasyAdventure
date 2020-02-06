@@ -75,4 +75,8 @@ public class EnemiesGenerator {
        return enemies;
     }
 
+    public int enemyCount(){
+        return enemies.size();
+    }
+
 }

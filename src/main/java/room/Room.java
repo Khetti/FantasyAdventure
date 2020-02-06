@@ -6,13 +6,13 @@ import loot.Treasure;
 
 import java.util.ArrayList;
 
-public class room {
+public class Room {
     String name;
     Treasure treasure;
     EnemiesGenerator enemies;
     ArrayList<Iplayer> players;
 
-    public room(String name, ArrayList<Iplayer> players) {
+    public Room(String name, ArrayList<Iplayer> players) {
         this.name = name;
         this.treasure = treasure;
         this.enemies = enemies;
@@ -23,12 +23,12 @@ public class room {
         return name;
     }
 
-    public ArrayList<Treasure> getTreasure() {
-        return treasure;
-    }
+//    public ArrayList<Treasure> getTreasure() {
+//        return treasure;
+//    }
 
-    public ArrayList<IEnemy> getEnemies() {
-        return enemies;
+    public int getEnemies() {
+        return enemies.enemyCount();
     }
 
     public ArrayList<Iplayer> getPlayers() {
