@@ -1,5 +1,8 @@
+package characterTest;
+
 import Weapon.Weapon;
 import character.Wizard;
+import loot.Treasure;
 import org.junit.Before;
 import org.junit.Test;
 

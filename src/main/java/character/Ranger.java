@@ -8,7 +8,7 @@ public class Ranger extends Character {
     public Ranger(String name, double HP, double damage, int gold) {
         super(name, HP, damage, gold);
         super.weapons = new ArrayList<Weapon>();
-        super.loot = new ArrayList<Treasure>();
+        super.loot = new ArrayList<loot.Treasure>();
     }
 
     public void shapeShift() {

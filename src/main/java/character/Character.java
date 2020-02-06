@@ -1,6 +1,7 @@
 package character;
 
 import Weapon.Weapon;
+import loot.Treasure;
 
 import java.util.ArrayList;
 
@@ -19,7 +20,7 @@ public abstract class Character {
         this.damage = damage;
         this.gold = gold;
         this.weapons = new ArrayList<Weapon>();
-        this.loot = new ArrayList<Treasure>();
+        this.loot = new ArrayList<loot.Treasure>();
     }
 
     public String getName() {

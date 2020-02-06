@@ -1,6 +1,7 @@
 package character;
 
 import Weapon.Weapon;
+import loot.Treasure;
 
 import java.util.ArrayList;
 

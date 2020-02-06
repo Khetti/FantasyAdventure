@@ -10,7 +10,7 @@ public class Cleric extends Character {
         super(name, HP, damage, gold);
 
         super.weapons = new ArrayList<Weapon>();
-        super.loot = new ArrayList<Treasure>();
+        super.loot = new ArrayList<loot.Treasure>();
     }
 
     public void heal(Character character) {

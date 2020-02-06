@@ -1,3 +1,5 @@
+package loot;
+
 public class Treasure {
 
     private String name;

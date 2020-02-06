@@ -1,71 +1,74 @@
+package characterTest;
+
 import Weapon.Weapon;
 import character.Cleric;
+import character.Necromancer;
 import character.Thief;
 import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
-public class ClericTest {
+public class NecromancerTest {
 
-    private Cleric cleric;
+    private Necromancer necromancer;
     private Weapon weapon;
 
 
     @Before
     public void before(){
-        cleric = new Cleric("cleric", 90, 5, 0);
+        necromancer = new Necromancer("Ghastreaver", 90, 5, 0);
         weapon = new Weapon("sword", 10, 3);
     }
 
     @Test
     public void canGetName(){
-        assertEquals("cleric", cleric.getName());
+        assertEquals("Ghastreaver", necromancer.getName());
     }
 
     @Test
     public void canGetHP(){
-        assertEquals(90, cleric.getHP(), 0.000);
+        assertEquals(90, necromancer.getHP(), 0.000);
     }
 
     @Test
     public void canGetDamage(){
-        assertEquals(5, cleric.getDamage(), 0.00);
+        assertEquals(5, necromancer.getDamage(), 0.00);
     }
 
     @Test
     public void canSetHP(){
-        cleric.setHP(50);
-        assertEquals(50, cleric.getHP(), 0.00);
+        necromancer.setHP(50);
+        assertEquals(50, necromancer.getHP(), 0.00);
     }
 
     @Test
     public void canSetDamage(){
-        cleric.setDamage(50);
-        assertEquals(50, cleric.getDamage(), 0.00);
+        necromancer.setDamage(50);
+        assertEquals(50, necromancer.getDamage(), 0.00);
     }
 
     @Test
     public void canAddWeapon(){
-        cleric.addWeapon(weapon);
-        assertEquals(1, cleric.getNumberWeapon());
+        necromancer.addWeapon(weapon);
+        assertEquals(1, necromancer.getNumberWeapon());
     }
 
     @Test
     public void goldStartATZero(){
-        assertEquals(0, cleric.getGold());
+        assertEquals(0, necromancer.getGold());
     }
 
     @Test
     public void canHeal(){
-        cleric.heal(cleric);
-        assertEquals(100, cleric.getHP(), 0.00);
+        necromancer.heal(necromancer);
+        assertEquals(100, necromancer.getHP(), 0.00);
     }
 
     @Test
     public void canAttack(){
         Thief thief = new Thief("thief", 60, 20, 0);
-        cleric.attack(thief, weapon);
+        necromancer.attack(thief, weapon);
         assertEquals(45, thief.getHP(), 0.00);
     }
 }

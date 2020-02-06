@@ -1,3 +1,5 @@
+package characterTest;
+
 import Weapon.Weapon;
 import character.Ranger;
 import character.Thief;
