@@ -7,5 +7,8 @@ public class Thief extends Character {
         super.loot = new ArrayList<Treasure>();
     }
 
+    public void pickPocket(){
+        addGold(10);
+    }
 
 }
