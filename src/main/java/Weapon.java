@@ -11,4 +11,15 @@ public class Weapon {
         this.range = range;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getDamage() {
+        return damage;
+    }
+
+    public double getRange() {
+        return range;
+    }
 }

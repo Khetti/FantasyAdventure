@@ -51,4 +51,12 @@ public abstract class Character {
     public void setLoot(ArrayList<Treasure> loot) {
         this.loot = loot;
     }
+
+    public int getNumberWeapon(){
+        return this.weapons.size();
+    }
+
+    public void addWeapon(Weapon weapon){
+        this.weapons.add(weapon);
+    }
 }
