@@ -6,7 +6,7 @@ import spellbook.SpellBook;
 
 import java.util.ArrayList;
 
-public class Cleric extends Character {
+public class Cleric extends Character implements Iplayer {
 
     private SpellBook spell;
 

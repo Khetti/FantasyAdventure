@@ -4,7 +4,7 @@ import Weapon.Weapon;
 
 import java.util.ArrayList;
 
-public class Fighter extends Character {
+public class Fighter extends Character implements Iplayer {
 
     public Fighter(String name, double HP, double damage, int gold) {
         super(name, HP, damage, gold);

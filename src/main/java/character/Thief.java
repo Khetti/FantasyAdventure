@@ -5,7 +5,7 @@ import loot.Treasure;
 
 import java.util.ArrayList;
 
-public class Thief extends Character {
+public class Thief extends Character implements Iplayer {
     public Thief(String name, double HP, double damage, int gold) {
         super(name, HP, damage, gold);
         super.weapons = new ArrayList<Weapon>();

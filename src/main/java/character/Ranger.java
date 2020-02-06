@@ -4,7 +4,7 @@ import Weapon.Weapon;
 
 import java.util.ArrayList;
 
-public class Ranger extends Character {
+public class Ranger extends Character implements Iplayer {
     public Ranger(String name, double HP, double damage, int gold) {
         super(name, HP, damage, gold);
         super.weapons = new ArrayList<Weapon>();

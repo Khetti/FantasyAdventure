@@ -1,6 +1,6 @@
 package character;
 
-public class Necromancer extends Character {
+public class Necromancer extends Character implements IEnemy {
     public Necromancer(String name, double HP, double damage, int gold) {
         super(name, HP, damage, gold);
     }

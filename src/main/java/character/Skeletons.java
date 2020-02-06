@@ -1,6 +1,6 @@
 package character;
 
-public class Skeletons extends Character {
+public class Skeletons extends Character implements IEnemy {
 
     public Skeletons(String name, double HP, double damage, int gold) {
         super(name, HP, damage, gold);
