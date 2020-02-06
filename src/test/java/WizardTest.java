@@ -13,7 +13,7 @@ public class WizardTest {
     public void setUp() {
         wizard = new Wizard("Edwin", 30, 3, 0);
         weapon = new Weapon("Staff", 1, 1);
-        treasure = new Treasure("Book of Forbidden Knowledge", "The text is indecipherable.", 20);
+        treasure = new Treasure("Tome of Forbidden Knowledge", "The text is indecipherable.", 20);
     }
 
     @Test
