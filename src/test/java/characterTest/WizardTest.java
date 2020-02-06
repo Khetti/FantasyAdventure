@@ -1,10 +1,12 @@
 package characterTest;
 
 import Weapon.Weapon;
+import character.Fighter;
 import character.Wizard;
 import loot.Treasure;
 import org.junit.Before;
 import org.junit.Test;
+import spellbook.SpellBook;
 
 import static junit.framework.TestCase.assertEquals;
 

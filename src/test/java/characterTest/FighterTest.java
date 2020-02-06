@@ -6,6 +6,7 @@ import character.Fighter;
 import loot.Treasure;
 import org.junit.Before;
 import org.junit.Test;
+import spellbook.SpellBook;
 
 import static junit.framework.TestCase.assertEquals;
 

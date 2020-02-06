@@ -6,6 +6,7 @@ import character.Cleric;
 import character.Thief;
 import org.junit.Before;
 import org.junit.Test;
+import spellbook.SpellBook;
 
 import static junit.framework.TestCase.assertEquals;
 
@@ -66,7 +67,7 @@ public class BanditTest {
 
     @Test
     public void canAttack(){
-        Cleric cleric = new Cleric("cleric", 90, 5, 0);
+        Cleric cleric = new Cleric("cleric", 90, 5, 0, SpellBook.HEAL);
         bandit.attack(cleric, weapon);
         assertEquals(60, cleric.getHP(), 0.00);
     }

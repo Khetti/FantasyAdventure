@@ -5,6 +5,7 @@ import character.Cleric;
 import character.Thief;
 import org.junit.Before;
 import org.junit.Test;
+import spellbook.SpellBook;
 
 import static junit.framework.TestCase.assertEquals;
 
