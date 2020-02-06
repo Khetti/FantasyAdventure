@@ -40,16 +40,8 @@ public abstract class Character {
         return weapons;
     }
 
-    public void setWeapons(ArrayList<Weapon> weapons) {
-        this.weapons = weapons;
-    }
-
     public ArrayList<Treasure> getLoot() {
         return loot;
-    }
-
-    public void setLoot(ArrayList<Treasure> loot) {
-        this.loot = loot;
     }
 
     public int getNumberWeapon(){
