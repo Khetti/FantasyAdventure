@@ -16,22 +16,39 @@ public abstract class Character {
         this.loot = new ArrayList<Treasure>();
     }
 
+    public String getName() {
+        return name;
+    }
 
-    public abstract String getName(String name);
+    public double getHP() {
+        return HP;
+    }
 
-    public abstract int getHP();
+    public void setHP(double HP) {
+        this.HP = HP;
+    }
 
-    public abstract void setHP(int HP);
+    public double getDamage() {
+        return damage;
+    }
 
-    public abstract int getDamage();
+    public void setDamage(double damage) {
+        this.damage = damage;
+    }
 
-    public abstract void setDamage(int damage);
+    public ArrayList<Weapon> getWeapons() {
+        return weapons;
+    }
 
-    public abstract ArrayList<Weapon> getWeapons();
+    public void setWeapons(ArrayList<Weapon> weapons) {
+        this.weapons = weapons;
+    }
 
-    public abstract void setWeapons(ArrayList<Weapon> weapons);
+    public ArrayList<Treasure> getLoot() {
+        return loot;
+    }
 
-    public abstract ArrayList<Treasure> getLoot();
-
-    public abstract void setLoot(ArrayList<Treasure> loot);
+    public void setLoot(ArrayList<Treasure> loot) {
+        this.loot = loot;
+    }
 }
