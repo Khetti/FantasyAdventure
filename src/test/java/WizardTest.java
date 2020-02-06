@@ -6,12 +6,14 @@ import static junit.framework.TestCase.assertEquals;
 public class WizardTest {
 
     Wizard wizard;
+    Fighter fighter;
     Weapon weapon;
     Treasure treasure;
 
     @Before
     public void setUp() {
-        wizard = new Wizard("Edwin", 30, 3, 0);
+        wizard = new Wizard("Edwin", 30, 3, 0, SpellBook.FIREBALL);
+        fighter = new Fighter("Minsc", 70, 10, 0);
         weapon = new Weapon("Staff", 1, 1);
         treasure = new Treasure("Tome of Forbidden Knowledge", "The text is indecipherable.", 20);
     }
@@ -70,6 +72,12 @@ public class WizardTest {
     public void canAddTreasure() {
         wizard.addTreasure(treasure);
         assertEquals(1, wizard.getNumberTreasure());
+    }
+
+    @Test
+    public void canCastSpell() {
+        wizard.castSpell(fighter);
+        assertEquals(40, fighter.getHP(), 0);
     }
 
 }

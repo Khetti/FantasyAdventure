@@ -60,7 +60,7 @@ public class ThiefTest {
 
     @Test
     public void canAttack(){
-        Cleric cleric = new Cleric("cleric", 90, 5, 0);
+        Cleric cleric = new Cleric("cleric", 90, 5, 0, SpellBook.HEAL);
         thief.attack(cleric, weapon);
         assertEquals(60, cleric.getHP(), 0.00);
     }
