@@ -10,7 +10,7 @@ public class ThiefTest {
 
     @Before
     public void before(){
-        thief = new Thief("thief", 60, 20);
+        thief = new Thief("thief", 60, 20, 0);
         weapon = new Weapon("sword", 10, 3);
     }
 

@@ -5,13 +5,15 @@ public abstract class Character {
     String name;
     double HP;
     double damage;
+    int gold;
     ArrayList<Weapon> weapons;
     ArrayList<Treasure> loot;
 
-    public Character(String name, double HP, double damage) {
+    public Character(String name, double HP, double damage, int gold) {
         this.name = name;
         this.HP = HP;
         this.damage = damage;
+        this.gold = gold;
         this.weapons = new ArrayList<Weapon>();
         this.loot = new ArrayList<Treasure>();
     }
@@ -34,6 +36,18 @@ public abstract class Character {
 
     public void setDamage(double damage) {
         this.damage = damage;
+    }
+
+    public int getGold() {
+        return gold;
+    }
+
+    public void setGold(int gold) {
+        this.gold = gold;
+    }
+
+    public void addGold(int gold) {
+        this.gold += gold;
     }
 
     public ArrayList<Weapon> getWeapons() {

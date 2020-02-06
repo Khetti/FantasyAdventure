@@ -11,7 +11,7 @@ public class FighterTest {
 
     @Before
     public void setUp() {
-        fighter = new Fighter("Minsc", 70, 10);
+        fighter = new Fighter("Minsc", 70, 10, 0);
         weapon = new Weapon("Axe", 5, 1);
         treasure = new Treasure("The Black Ruby of Voldesad", "A gem of great value", 100);
     }
@@ -41,6 +41,23 @@ public class FighterTest {
     public void canSetDamage() {
         fighter.setDamage(12);
         assertEquals(12, fighter.getDamage(), 0);
+    }
+
+    @Test
+    public void canGetGold() {
+        assertEquals(0, fighter.getGold());
+    }
+
+    @Test
+    public void canSetGold() {
+        fighter.setGold(100);
+        assertEquals(100, fighter.getGold());
+    }
+
+    @Test
+    public void canAddGold() {
+        fighter.addGold(10);
+        assertEquals(10, fighter.getGold());
     }
 
     @Test
