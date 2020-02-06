@@ -1,3 +1,7 @@
+package character;
+
+import Weapon.Weapon;
+
 import java.util.ArrayList;
 
 public class Cleric extends Character {

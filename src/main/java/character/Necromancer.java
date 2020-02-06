@@ -1,4 +1,4 @@
-package character.enemies;
+package character;
 
 public class Necromancer {
 }

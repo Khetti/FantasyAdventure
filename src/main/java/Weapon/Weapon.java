@@ -1,3 +1,5 @@
+package Weapon;
+
 public class Weapon {
 
     String name;

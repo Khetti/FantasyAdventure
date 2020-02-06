@@ -1,3 +1,6 @@
+import Weapon.Weapon;
+import character.Cleric;
+import character.Thief;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -6,7 +9,7 @@ import static junit.framework.TestCase.assertEquals;
 public class ClericTest {
 
     private Cleric cleric;
-    private  Weapon weapon;
+    private Weapon weapon;
 
 
     @Before

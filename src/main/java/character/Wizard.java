@@ -1,9 +1,12 @@
+package character;
+
+import Weapon.Weapon;
 
 import java.util.ArrayList;
 
 public class Wizard extends Character {
 
-//    private ArrayList<SpellBook> spells;
+//    private ArrayList<Weapon.SpellBook> spells;
     Spellbook
 
     public Wizard(String name, double HP, double damage, int gold) {
@@ -15,7 +18,7 @@ public class Wizard extends Character {
     }
 
 //    public void populateSpells(){
-//        for (SpellBook spell : SpellBook.values)
+//        for (Weapon.SpellBook spell : Weapon.SpellBook.values)
 //    }
 
     public void castDamageSpell(Character character, String chosenSpell) {

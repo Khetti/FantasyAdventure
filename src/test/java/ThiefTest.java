@@ -1,3 +1,6 @@
+import Weapon.Weapon;
+import character.Cleric;
+import character.Thief;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -1,3 +1,5 @@
+package Weapon;
+
 public enum SpellBook {
 
     FIREBALL(30),
