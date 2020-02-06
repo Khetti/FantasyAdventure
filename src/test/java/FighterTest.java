@@ -45,7 +45,7 @@ public class FighterTest {
 
     @Test
     public void canAddWeapon() {
-        fighter.addWeapon(weapon)
+        fighter.addWeapon(weapon);
     }
 
     @Test
