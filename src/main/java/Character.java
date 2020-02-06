@@ -51,4 +51,12 @@ public abstract class Character {
     public void addWeapon(Weapon weapon){
         this.weapons.add(weapon);
     }
+
+    public int getNumbertreasure(){
+        return this.weapons.size();
+    }
+
+    public void addtreasure(Treasure treasure){
+        this.loot.add(treasure);
+    }
 }
