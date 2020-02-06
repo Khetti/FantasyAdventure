@@ -45,12 +45,14 @@ public class FighterTest {
 
     @Test
     public void canAddWeapon() {
-        fighter.addWeapon(weapon)
+        fighter.addWeapon(weapon);
+        assertEquals(1, fighter.getNumberWeapon());
     }
 
     @Test
     public void canAddTreasure() {
         fighter.addTreasure(treasure);
+        assertEquals(1, fighter.getNumberTreasure());
     }
 
 }
