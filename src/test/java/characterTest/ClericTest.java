@@ -16,7 +16,7 @@ public class ClericTest {
 
     @Before
     public void before(){
-        cleric = new Cleric("cleric", 90, 5, 0);
+        cleric = new Cleric("cleric", 90, 5, 0, SpellBook.HEAL);
         weapon = new Weapon("sword", 10, 3);
     }
 
