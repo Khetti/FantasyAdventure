@@ -73,4 +73,11 @@ public abstract class Character {
     public void addTreasure(Treasure treasure){
         this.loot.add(treasure);
     }
+
+    public void attack(Character character, Weapon weapon){
+        double damage =  this.damage + weapon.getDamage();
+        double hp = character.getHP();
+        double newHP = hp - damage;
+        character.setHP(newHP);
+    }
 }

@@ -57,4 +57,11 @@ public class ThiefTest {
         thief.pickPocket();
         assertEquals(10, thief.getGold());
     }
+
+    @Test
+    public void canAttack(){
+        Cleric cleric = new Cleric("cleric", 90, 5, 0);
+        thief.attack(cleric, weapon);
+        assertEquals(60, cleric.getHP(), 0.00);
+    }
 }
