@@ -15,7 +15,6 @@ public class ClericTest {
         weapon = new Weapon("sword", 10, 3);
     }
 
-
     @Test
     public void canGetName(){
         assertEquals("cleric", cleric.getName());
