@@ -38,12 +38,23 @@ public class ThiefTest {
     @Test
     public void canSetDamage(){
         thief.setDamage(50);
-        assertEquals(50, thief.getHP(), 0.00);
+        assertEquals(50, thief.getDamage(), 0.00);
     }
 
     @Test
-    public  void canAddWeapon(){
+    public void canAddWeapon(){
         thief.addWeapon(weapon);
         assertEquals(1, thief.getNumberWeapon());
+    }
+
+    @Test
+    public void goldStartATZero(){
+        assertEquals(0, thief.getGold());
+    }
+
+    @Test
+    public void canPickPocket(){
+        thief.pickPocket();
+        assertEquals(10, thief.getGold());
     }
 }
