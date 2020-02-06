@@ -6,7 +6,7 @@ public abstract class Character {
     int HP;
     int damage;
     ArrayList<Weapon> weapons;
-    ArrayList<Treasure> loot
+    ArrayList<Treasure> loot;
 
     public Character(String name, int HP, int damage) {
         this.name = name;
@@ -16,4 +16,22 @@ public abstract class Character {
         this.loot = new ArrayList<Treasure>();
     }
 
+
+    public abstract void getName(String name);
+
+    public abstract int getHP();
+
+    public abstract void setHP(int HP);
+
+    public abstract int getDamage();
+
+    public abstract void setDamage(int damage);
+
+    public abstract ArrayList<Weapon> getWeapons();
+
+    public abstract void setWeapons(ArrayList<Weapon> weapons);
+
+    public abstract ArrayList<Treasure> getLoot();
+
+    public abstract void setLoot(ArrayList<Treasure> loot);
 }
