@@ -72,4 +72,10 @@ public class FighterTest {
         assertEquals(1, fighter.getNumberTreasure());
     }
 
+    @Test
+    public void canBattleCry() {
+        fighter.battleCry();
+        assertEquals(20, fighter.getDamage(), 0);
+    }
+
 }

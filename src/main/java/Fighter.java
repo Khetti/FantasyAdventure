@@ -8,4 +8,8 @@ public class Fighter extends Character {
         super.loot = new ArrayList<Treasure>();
     }
 
+    public void battleCry() {
+        this.damage = (this.damage * 2);
+    }
+
 }
