@@ -9,7 +9,7 @@ public class Fighter extends Character {
     }
 
     public void battleCry() {
-        this.damage = (this.damage * 2);
+        this.damage *= 2;
     }
 
 }
